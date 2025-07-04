@@ -1,0 +1,9 @@
+version: "3.4"
+
+services:
+  saleor:
+    ports:
+      - 8000:8000
+    environment:
+      ALLOWED_HOSTS: "*"
+      CORS_ALLOWED_ORIGIN_REGEXES: "http://localhost:9000"
